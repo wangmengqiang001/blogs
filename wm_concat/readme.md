@@ -155,8 +155,11 @@ grant execute on wm_concat to public;
 
 - 参考文档：
 [oracle连接字符串函数，wmsys.wm_concat和LISTAGG](https://blog.csdn.net/qq_33157666/article/details/72854801)
+
  [Using WMSYS.WM_CONCAT with Oracle XE 10g](https://stackoverflow.com/questions/3513787/using-wmsys-wm-concat-with-oracle-xe-10g)
+ 
 [Oracle函数之LISTAGG](https://www.cnblogs.com/ivictor/p/4654267.html)
+
 [Oracle列转行函数 Listagg() 语法详解及应用实例](https://blog.csdn.net/hpdlzu80100/article/details/53998413)
 
 
