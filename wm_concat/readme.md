@@ -2,7 +2,7 @@ racle 11g XE 部署一个已有的应用，发现在该应用的建库脚本及�
 
 # 对策分析
 - 首先，最好不用wm_concat, 如下图所说，使用了移植性将无法保证。
-![wm_concat.png](http://github.com/wangmengqiang001/blogs/wm_concat/images/wm_concat.png)
+![wm_concat.png](http://github.com/wangmengqiang001/blogs/tree/master/wm_concat/images/wm_concat.png)
 
 - 其次， 可以LISTAGG 来代替
 在如下的示例中
@@ -149,7 +149,7 @@ grant execute on wm_concat to public;
 ````
 
 - 代码文件
-[Github 下载](http://github.com/wangmengqiang001/blogs/wm_concat/src/code.sql)
+[Github 下载](https://github.com/wangmengqiang001/blogs/tree/master/wm_concat/src/code.sql)
 
 
 - 参考文档：
