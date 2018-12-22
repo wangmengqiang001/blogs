@@ -1,4 +1,5 @@
-racle 11g XE 部署一个已有的应用，发现在该应用的建库脚本及应用中的数据库访问中都有使用函数 WMSYS.WM_CONCAT。 经过查资料发现这是一个标准版的内部函数，不推荐使用的。
+# 遇到的问题
+Oracle 11g XE 部署一个已有的应用，发现在该应用的建库脚本及应用中的数据库访问中都有使用函数 WMSYS.WM_CONCAT。 经过查资料发现这是一个标准版的内部函数，不推荐使用的。
 
 # 对策分析
 - 首先，最好不用wm_concat, 如下图所说，使用了移植性将无法保证。
@@ -152,12 +153,11 @@ grant execute on wm_concat to public;
 [Github 下载](https://github.com/wangmengqiang001/blogs/tree/master/wm_concat/src/code.sql)
 
 
-- 参考文档：
-[oracle连接字符串函数，wmsys.wm_concat和LISTAGG](https://blog.csdn.net/qq_33157666/article/details/72854801)
- [Using WMSYS.WM_CONCAT with Oracle XE 10g](https://stackoverflow.com/questions/3513787/using-wmsys-wm-concat-with-oracle-xe-10g)
-[Oracle函数之LISTAGG](https://www.cnblogs.com/ivictor/p/4654267.html)
-[Oracle列转行函数 Listagg() 语法详解及应用实例](https://blog.csdn.net/hpdlzu80100/article/details/53998413)
-
+- 参考文档：  
+[oracle连接字符串函数，wmsys.wm_concat和LISTAGG](https://blog.csdn.net/qq_33157666/article/details/72854801)   
+ [Using WMSYS.WM_CONCAT with Oracle XE 10g](https://stackoverflow.com/questions/3513787/using-wmsys-wm-concat-with-oracle-xe-10g)     
+[Oracle函数之LISTAGG](https://www.cnblogs.com/ivictor/p/4654267.html)    
+[Oracle列转行函数 Listagg() 语法详解及应用实例](https://blog.csdn.net/hpdlzu80100/article/details/53998413)   
 
 
 
