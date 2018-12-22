@@ -33,9 +33,9 @@ group by nation;
 - 另外，有向XE导入 owmctab.plb  owmaggrs.plb      owmaggrb.plb  重建内置函数的方法
 
 在一些文章中给出了链接，要先下载这几个文件，再执行这些文件
-> sql> @owmcatb.plb
-   sql>@owmaggrs.plb
-   sql>@owmaggrb.plb
+> sql> @owmcatb.plb  
+   sql>@owmaggrs.plb  
+   sql>@owmaggrb.plb  
 
 现在在网上几乎下载不到这几个文件了，从其它文章看这几个文件应该是从标准版中取出来的，考虑版权的问题，这样用似乎也不妥，而且这几个文件是经过加密的sql，看不到正文，也不要考虑了。
 
