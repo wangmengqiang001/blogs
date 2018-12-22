@@ -1,0 +1,11 @@
+#!/bin/sh
+#su  oracle
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus / as sysdba<<EOF
+shutdown immediate;
+startup restrict;
+ALTER DATABASE character set INTERNAL_USE ZHS16GBK;
+shutdown immediate;
+startup;
+quit;
+EOF
+#exit
