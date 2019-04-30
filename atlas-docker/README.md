@@ -6,6 +6,7 @@
 
 编译成功后在distro/target下有文件apache-atlas-1.1.0-server.tar.gz，它是要打入镜像中的程序包。
 
+以下为制作镜像的Dockerfile文件的内容：
 ````
 FROM openjdk:8-jdk-alpine
 
