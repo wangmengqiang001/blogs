@@ -67,7 +67,7 @@ docker run -d --shm-size=1g -p 8080:8080 -p 1521:1521 \
 
 另外，虽然用容器启动oracle xe是比较便捷的，但是缺点是在容器重新启动时会出现重新初始化数据和数据丢失的问题，为避免应该通过存储挂载把库文件持久化到容器外面，并需要在初始化脚本中加上判断和处理，在数据文件已经存在时不执行初始化脚本而是进行已有文件的导入处理，这计划另起篇章。
 
-- 参考
+- 参考    
 [oracle字符集转换(ZHS16GBK转AL32UTF8)](http://blog.itpub.net/25462274/viewspace-2135855/)   
 [Docker hub: alexeiled/docker-oracle-xe-11g](https://hub.docker.com/r/alexeiled/docker-oracle-xe-11g)  
 [sqlplus 与 shell 结合--shell中执行sql 脚本](https://blog.csdn.net/fxyfdf/article/details/59626298)
